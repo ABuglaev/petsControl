@@ -1,0 +1,28 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.jsx",
+  "scripts": {
+    "build": ".\\node_modules\\.bin\\webpack --watch",
+    "livebuild": ".\\node_modules\\.bin\\webpack-dev-server --progress --colors"
+  },
+  "author": "ABuglaev",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^3.2.1",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

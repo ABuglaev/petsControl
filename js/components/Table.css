@@ -1,0 +1,17 @@
+#mainTable button  {
+  margin: 10px;
+}
+
+#mainTable input, #updatePetModal input {
+  margin: 4px;
+  width: 90%;
+}
+
+#findPet {
+  width: 80%;
+  max-width: 500px;
+}
+
+.marker {
+  background-color: #afa;
+}

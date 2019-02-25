@@ -1,0 +1,69 @@
+.loginForm input{
+  margin: 8px;
+  border-radius: 5px;
+  min-width: 300px;
+  height: 2em;
+  text-align: left;
+  background-color: #ccc;
+}
+
+.loginForm button{
+  margin: 8px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}
+.signupForm input{
+  margin: 8px;
+  border-radius: 5px;
+  min-width: 300px;
+  height: 2em;
+  text-align: left;
+  background-color: #ccc;
+}
+
+/* .signupForm input:invalid {
+  border: 1px solid red;
+} */
+
+.signupForm input:valid {
+  border: 1px solid green;
+}
+
+.signupForm button{
+  margin: 8px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}
+#mainTable button  {
+  margin: 10px;
+}
+
+#mainTable input, #updatePetModal input {
+  margin: 4px;
+  width: 90%;
+}
+
+#findPet {
+  width: 80%;
+  max-width: 500px;
+}
+
+.marker {
+  background-color: #afa;
+}.resetForm input{
+  margin: 8px;
+  border-radius: 5px;
+  min-width: 300px;
+  height: 2em;
+  text-align: left;
+  background-color: #ccc;
+}
+
+.resetForm button{
+  margin: 8px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}

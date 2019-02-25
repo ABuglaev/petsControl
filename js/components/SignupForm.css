@@ -1,0 +1,23 @@
+.signupForm input{
+  margin: 8px;
+  border-radius: 5px;
+  min-width: 300px;
+  height: 2em;
+  text-align: left;
+  background-color: #ccc;
+}
+
+/* .signupForm input:invalid {
+  border: 1px solid red;
+} */
+
+.signupForm input:valid {
+  border: 1px solid green;
+}
+
+.signupForm button{
+  margin: 8px;
+  border-radius: 5px;
+  text-align: center;
+  min-width: 300px;
+}
