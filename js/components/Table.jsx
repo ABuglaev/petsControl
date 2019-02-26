@@ -32,6 +32,7 @@ export default class Table extends React.Component {
       formData.append('petsNames', document.getElementById('petsNames').value);
 
       removePets(formData);
+      setTimeout(() => {getPets(this, localStorage.Token)}, 1001);
     }
 
     let onUpdatePetButton = () => {
@@ -42,6 +43,7 @@ export default class Table extends React.Component {
       formData.append('id', rowId);
 
       updatePet(formData);
+      setTimeout(() => {getPets(this, localStorage.Token)}, 1001);
     }
 
     getPets(this, localStorage.Token);
