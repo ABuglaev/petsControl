@@ -37,7 +37,6 @@ import axios from 'axios';
   }
 
   let getPets = (comp, token) => {
-    console.time()
     axios({
       method: 'post',
       url: `http://tonight.by:3012/getTableData`,
@@ -49,11 +48,8 @@ import axios from 'axios';
     })
       .then((response) => {
         if (response.data.status == 0) { alert(response.data.text); location.hash = '#login'; return; }
-        console.timeEnd()
         comp.setState({ petsRows: response.data });
-        
       })
-      
   }
 
   let  addPet = (formData) => {

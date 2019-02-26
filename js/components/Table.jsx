@@ -23,6 +23,8 @@ export default class Table extends React.Component {
       formData.append('petType', document.getElementById('petType').value);
 
       addPet(formData);
+      //небольшой костыль для обновления. правильный способ потребует много кода
+      setTimeout(() => {getPets(this, localStorage.Token)}, 1001);
     }
 
     let onRemovePetsButton = () => {
