@@ -7,6 +7,7 @@ var { Client } = require('pg');
 var redis = require('redis');
 var redisClient = redis.createClient();
 var cors = require('cors');
+var router = require('./controller/router');
 
 //connect to email server
 var server = email.server.connect({
@@ -78,6 +79,7 @@ var sendResetLink = function (email, link) {
 
 var app = express();
 
+app.use('/', router);
 app.use(cors({ exposedHeaders: 'Authorization' }));
 app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Origin", "*");
